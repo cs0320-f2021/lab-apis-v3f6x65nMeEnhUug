@@ -46,10 +46,10 @@ public class Repl {
           if (command.equals("basicGet")) { // Basic GET request
             client.makeRequest(ClientRequestGenerator.getIntroGetRequest());
 
-          } else if (command.equals("keyedGet")) { // GET request with an api key
+          } else if (command.equals("keyedGet")) { // GET request with an api apikey
             client.makeRequest(ClientRequestGenerator.getSecuredGetRequest());
 
-          } else if (command.equals("keyedPost")) { // POST with an api key
+          } else if (command.equals("keyedPost")) { // POST with an api apikey
             String name;
             if (st.hasMoreTokens()) {
               name = st.nextToken();
@@ -58,7 +58,7 @@ public class Repl {
             }
             client.makeRequest(ClientRequestGenerator.getSecuredPostRequest(name));
 
-          } else if (command.equals("getHoroscopes")) { // GET with an api key and a string param
+          } else if (command.equals("getHoroscopes")) { // GET with an api apikey and a string param
             String name;
             if (st.hasMoreTokens()) {
               name = st.nextToken();

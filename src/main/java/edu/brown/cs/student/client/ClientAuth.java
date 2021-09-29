@@ -11,7 +11,7 @@ public class ClientAuth {
    * Reads the API Key from the secret text file where we have stored it. Refer to the handout for more on security
    * practices.
    *
-   * @return a String of the api key.
+   * @return a String of the api apikey.
    */
   public static String getApiKey() {
     FileParser parser = new FileParser("config/secret/apikey.txt");
